@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>soumya</title>
+  </head>
+  <body class="">
+    <!-- mane section  -->
+    <section
+      class="w-full min-h-screen flex flex-row justify-center items-center"
+    >
+      <!-- navigation bar -->
+      <nav class="fixed w-full top-0 py-2 z-30 backdrop-blur-lg">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex-shrink-0 md:px-10">
+              <a href="soumya.html" class="text-2xl font-bold text-gray-800"
+                ><img
+                  src="./img/Logo Shape Start with a square or rectangular shape to represent stability and structure. Ins 1  (1).png"
+                  alt="logo"
+                  class="h-16"
+              /></a>
+            </div>
+
+            <!-- Hamburger Button (Mobile) -->
+            <div class="md:hidden">
+              <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Nav Links (Desktop) -->
+            <ul
+              class="hidden md:flex space-x-16 absolute left-1/2 transform -translate-x-1/2 text-black font-medium"
+            >
+              <li>
+                <a href="#" class="hover:text-blue-600 transition">Home</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue-600 transition">About</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue-600 transition">Services</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue-600 transition">Portfolio</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue-600 transition">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="md:hidden hidden">
+            <ul class="flex flex-col mt-4 space-y-2 text-gray-700 font-medium">
+              <li>
+                <a href="#" class="block px-2 py-1 hover:text-blue-600">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block px-2 py-1 hover:text-blue-600"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-2 py-1 hover:text-blue-600"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-2 py-1 hover:text-blue-600"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-2 py-1 hover:text-blue-600"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <script>
+        // Mobile menu toggle
+        document
+          .getElementById("menu-toggle")
+          .addEventListener("click", function () {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+          });
+      </script>
+      <!-- triangle div -->
+      <!-- this is a triangle div only visible on desktop -->
+      <div
+        class="w-1/4 h-screen bg-[#0a0017] md:fixed md:flex justify-center items-center left-0 top-20 z-20 hidden"
+      >
+        <div class="triangle -mr-24 -mt-20"></div>
+      </div>
+      <!-- this div is only visible on mobile  -->
+      <div class="md:hidden block absolute bottom-0 right-0 w-1/2 z-30">
+        <img
+          src="./img/ed97179b1a21251a1b4f3c2f03cd9273.png"
+          alt="soumyadeep"
+          loading="lazy"
+          class="w-full mask-l-from-75% mask-l-to-95% mask-b-from-70% mask-b-to-95%"
+        />
+      </div>
+      <!-- content section -->
+      <div class="md:w-4/6 absolute right-0 top-0 flex flex-col justify-center">
+        <!-- hero section  -->
+        <section
+          class="h-screen flex flex-col justify-center text-left md:pl-16 px-10 md:px-0"
+        >
+          <h1 class="text-4xl/12 font-bold text-purple-800">Hello,</h1>
+          <h1 class="md:text-5xl text-4xl font-bold text-orange-400">
+            I am Soummyadeep,<span class="md:text-7xl text-6xl text-purple-900"
+              >full Stack</span
+            >
+          </h1>
+          <h1
+            class="md:text-9xl text-7xl font-bold py-3 bg-gradient-to-l from-purple-950 to-purple-300 to-70% bg-clip-text text-transparent"
+          >
+            Web developer
+          </h1>
+          <h1
+            class="md:text-8xl text-5xl font-bold bg-gradient-to-l text-purple-900"
+          >
+            &
+          </h1>
+          <h1
+            class="md:text-9xl text-7xl font-bold py-2 pb-5 bg-gradient-to-l from-purple-900 to-purple-300 to-70% bg-clip-text text-transparent"
+          >
+            Web designer
+          </h1>
+        </section>
+        <!-- about section -->
+        <section class="px-3">
+          <h1 class="text-6xl font-bold text-orange-500 my-8">💼Who I am</h1>
+          <div class="max-w-4xl md:pl-10 px-6">
+            <p class="py-3 text-purple-950">
+              I’m Soumyadeep, a professional web developer and UI/UX designer
+              based in India, with over 3 years of experience crafting custom
+              digital solutions for businesses and entrepreneurs.
+            </p>
+            <p class="py-1 text-purple-950">
+              I specialize in building responsive, performance-optimized
+              websites that blend clean aesthetics with intuitive functionality.
+              Whether it’s a custom-coded solution or a WordPress-based platform
+              (including WooCommerce), I deliver scalable, user-focused results
+              tailored to each client’s needs.
+            </p>
+            <p class="py-1 text-purple-950">
+              My technical toolkit includes HTML, CSS, JavaScript, React,
+              Tailwind CSS, PHP, and Figma — enabling me to create modern,
+              engaging digital experiences aligned with current design and
+              development standards.
+            </p>
+            <p class="py-1 text-purple-950">
+              At present, I’m focused on growing my freelancing practice by
+              offering end-to-end design and development services for brands
+              aiming to establish a powerful and effective online presence.
+            </p>
+          </div>
+        </section>
+        <!-- skill/tach section -->
+        <section class="md:px-16 px-4 py-20">
+          <h1 class="md:text-6xl text-5xl font-bold text-orange-500 pt-10">
+            My Skills & Tools
+          </h1>
+
+          <div class="grid md:grid-cols-2 gap-4 mt-5 px-8">
+            <div
+              class="bg-gray-200 p-5 rounded-lg shadow-md relative overflow-hidden flex flex-col justify-center"
+            >
+              <span
+                class="absolute h-full w-[90%] top-0 left-0 bg-purple-400"
+              ></span>
+              <h2 class="text-xl font-bold z-10">HTML</h2>
+              <p class="mt-2 z-10">Proficient in HTML5 and semantic markup.</p>
+            </div>
+            <div
+              class="bg-gray-200 p-5 rounded-lg shadow-md relative overflow-hidden flex flex-col justify-center"
+            >
+              <span
+                class="absolute h-full w-[80%] top-0 left-0 bg-purple-400"
+              ></span>
+              <h2 class="text-xl font-bold z-10">CSS</h2>
+              <p class="mt-2 z-10">Expert in CSS3, Flexbox, and Grid.</p>
+            </div>
+            <div
+              class="bg-gray-200 p-5 rounded-lg shadow-md relative overflow-hidden flex flex-col justify-center"
+            >
+              <span
+                class="absolute h-full w-[70%] top-0 left-0 bg-purple-400"
+              ></span>
+              <h2 class="text-xl font-bold z-10">JavaScript</h2>
+              <p class="mt-2 z-10">
+                Skilled in ES6+ and modern JavaScript frameworks.
+              </p>
+            </div>
+            <div
+              class="bg-gray-200 p-5 rounded-lg shadow-md relative overflow-hidden flex flex-col justify-center"
+            >
+              <span
+                class="absolute h-full w-[70%] top-0 left-0 bg-purple-400"
+              ></span>
+              <h2 class="text-xl font-bold z-10">Tailwind</h2>
+              <p class="mt-2 z-10">
+                Utility-first CSS for fast and custom web design.
+              </p>
+            </div>
+            <div
+              class="bg-gray-200 p-5 rounded-lg shadow-md relative overflow-hidden flex flex-col justify-center"
+            >
+              <span
+                class="absolute h-full w-[80%] top-0 left-0 bg-purple-400"
+              ></span>
+              <h2 class="text-xl font-bold z-10">React</h2>
+              <p class="mt-2 z-10">
+                Building interactive UIs with reusable components and hooks.
+              </p>
+            </div>
+            <div
+              class="bg-gray-200 p-5 rounded-lg shadow-md relative overflow-hidden flex flex-col justify-center"
+            >
+              <span
+                class="absolute h-full w-[60%] top-0 left-0 bg-purple-400"
+              ></span>
+              <h2 class="text-xl font-bold z-10">PHP</h2>
+              <p class="mt-2 z-10">
+                Server-side development, creating dynamic web content and
+                databases.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- work section -->
+        <section class="py-16 md:px-16 px-4">
+          <h1 class="md:text-7xl text-5xl font-bold text-orange-500">
+            work section
+          </h1>
+          <!-- Slideshow 1 -->
+          <div class="mx-auto mt-4 bg-white rounded-2xl overflow-hidden">
+            <h1 class="text-4xl font-bold py-10">prev work</h1>
+            <div id="slideshow1" class="relative">
+              <div class="slide p-6 text-center block">Slideshow 1 slide 1</div>
+              <div class="slide p-6 text-center hidden">
+                Slideshow 1 slide 2
+              </div>
+              <div class="slide p-6 text-center hidden">
+                Slideshow 1 slide 3
+              </div>
+              <div class="slide p-6 text-center hidden">
+                Slideshow 1 slide 4
+              </div>
+              <div class="slide p-6 text-center hidden">
+                Slideshow 1 slide 5
+              </div>
+              <div class="slide p-6 text-center hidden">
+                <h2 class="text-xl font-semibold">Tools & Resources2</h2>
+                <p class="mt-2">VS Code, GitHub, W3Schools</p>
+              </div>
+              <div class="slide p-6 text-center hidden">
+                <h2 class="text-xl font-semibold">Tools & Resources3</h2>
+                <p class="mt-2">VS Code, GitHub, W3Schools</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center p-4">
+              <button
+                onclick="changeSlide('slideshow1', -1)"
+                class="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600"
+              >
+                <i data-lucide="chevron-left"></i>
+              </button>
+              <div id="indicator-slideshow1" class="flex gap-2">
+                <span class="w-3 h-3 rounded-full bg-blue-500"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+              </div>
+              <button
+                onclick="changeSlide('slideshow1', 1)"
+                class="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600"
+              >
+                <i data-lucide="chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Slideshow 2 -->
+          <div class="mx-auto mt-10 bg-white rounded-2xl overflow-hidden">
+            <h1 class="text-4xl font-bold py-10">prev work</h1>
+            <div id="slideshow2" class="relative">
+              <div class="slide p-6 text-center block">Slideshow 2 slide 1</div>
+              <div class="slide p-6 text-center hidden">
+                Slideshow 2 slide 2
+              </div>
+              <div class="slide p-6 text-center hidden">
+                Slideshow 2 slide 3
+              </div>
+              <div class="slide p-6 text-center hidden">
+                Slideshow 2 slide 4
+              </div>
+              <div class="slide p-6 text-center hidden">
+                Slideshow 2 slide 5
+              </div>
+            </div>
+            <div class="flex justify-between items-center p-4">
+              <button
+                onclick="changeSlide('slideshow2', -1)"
+                class="p-2 bg-green-500 text-white rounded-full hover:bg-green-600"
+              >
+                <i data-lucide="chevron-left"></i>
+              </button>
+              <div id="indicator-slideshow2" class="flex gap-2">
+                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+              </div>
+              <button
+                onclick="changeSlide('slideshow2', 1)"
+                class="p-2 bg-green-500 text-white rounded-full hover:bg-green-600"
+              >
+                <i data-lucide="chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <!-- 1st slideshow js -->
+          <!-- <script>
+                 const currentSlide = { slideshow1: 0, slideshow2: 0, slideshow: 0 };
+
+                 function changeSlide(id, direction) {
+                   const slides = document.querySelectorAll(`#${id} .slide`);
+                   const indicators = document.querySelectorAll(
+                     `#indicator-${id} span`
+                   );
+                   slides[currentSlide[id]].classList.add("hidden");
+                   indicators[currentSlide[id]].classList.remove(
+                     id === "slideshow1" ? "bg-blue-500" : "bg-green-500"
+                   );
+                   indicators[currentSlide[id]].classList.add("bg-gray-300");
+
+                   currentSlide[id] =
+                     (currentSlide[id] + direction + slides.length) % slides.length;
+
+                   slides[currentSlide[id]].classList.remove("hidden");
+                   indicators[currentSlide[id]].classList.remove("bg-gray-300");
+                   indicators[currentSlide[id]].classList.add(
+                     id === "slideshow1" ? "bg-blue-500" : "bg-green-500"
+                   );
+                 }
+
+                 lucide.createIcons();
+               </script> -->
+
+          <h1 class="text-6xl font-bold my-8 text-orange-500 mt-16">
+            UI Design
+          </h1>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-10"
+          >
+            <!-- Repeatable block -->
+            <!-- image1 -->
+            <div
+              class="overflow-hidden rounded-2xl shadow-md h-40 hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                src="https://i.pinimg.com/736x/35/1b/cd/351bcd095405abe33788c212eba2a47b.jpg"
+                alt="Gallery Image"
+                class="w-full h-full object-cover cursor-pointer"
+                loading="lazy"
+              />
+            </div>
+            <!-- image2 -->
+            <div
+              class="overflow-hidden rounded-2xl shadow-md h-40 hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                src="https://i.pinimg.com/736x/6e/b8/4e/6eb84efa524606c58ef0474403b928ef.jpg"
+                alt="Gallery Image"
+                class="w-full h-full object-cover cursor-pointer"
+                loading="lazy"
+              />
+            </div>
+            <!-- image3 -->
+            <div
+              class="overflow-hidden rounded-2xl shadow-md h-40 hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                src="https://i.pinimg.com/736x/51/48/5e/51485e4099011f09130fb9ec1e6ae3b3.jpg"
+                alt="Gallery Image"
+                class="w-full h-full object-cover cursor-pointer"
+                loading="lazy"
+              />
+            </div>
+            <!-- image4 -->
+            <div
+              class="overflow-hidden rounded-2xl shadow-md h-40 hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                src="https://i.pinimg.com/736x/9b/9e/7e/9b9e7e7bee15e21f46fd10628ad4a6ef.jpg"
+                alt="Gallery Image"
+                class="w-full h-full object-cover cursor-pointer"
+                loading="lazy"
+              />
+            </div>
+            <!-- image5 -->
+            <div
+              class="overflow-hidden rounded-2xl shadow-md h-40 hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                src="https://i.pinimg.com/736x/1e/45/8f/1e458f7dd8aaf57a91dd23d8d1d4948b.jpg"
+                alt="Gallery Image"
+                class="w-full h-full object-cover cursor-pointer"
+                loading="lazy"
+              />
+            </div>
+            <!-- image6 -->
+            <div
+              class="overflow-hidden rounded-2xl shadow-md h-40 hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                src="https://i.pinimg.com/736x/e1/04/65/e10465b2fa03176b2e24b48a22ff48ed.jpg"
+                alt="Gallery Image"
+                class="w-full h-full object-cover cursor-pointer"
+                loading="lazy"
+              />
+            </div>
+            <!-- image7 -->
+            <div
+              class="overflow-hidden rounded-2xl shadow-md h-40 hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                src="https://i.pinimg.com/736x/2e/1c/05/2e1c05ad9f770b0b14ef89e9a844555d.jpg"
+                alt="Gallery Image"
+                class="w-full h-full object-cover cursor-pointer"
+                loading="lazy"
+              />
+            </div>
+            <!-- image8 -->
+            <div
+              class="overflow-hidden rounded-2xl shadow-md h-40 hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                src="https://i.pinimg.com/736x/9b/bb/44/9bbb44deef2d501aa5cbc4a5f2833c4d.jpg"
+                alt="Gallery Image"
+                class="w-full h-full object-cover cursor-pointer"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- Duplicate or vary the above block for all 12 images -->
+            <!-- ... copy 11 more blocks or use a loop in frameworks -->
+          </div>
+
+          <!-- Fullscreen Overlay -->
+          <div
+            id="fullscreenOverlay"
+            class="fullscreen-overlay"
+            onclick="hideOverlay()"
+          >
+            <img id="fullscreenImage" src="" alt="Full Screen View" />
+          </div>
+
+          <script>
+            const images = document.querySelectorAll("section img");
+            const overlay = document.getElementById("fullscreenOverlay");
+            const fullscreenImg = document.getElementById("fullscreenImage");
+
+            images.forEach((img) => {
+              img.addEventListener("click", () => {
+                fullscreenImg.src = img.src;
+                overlay.classList.add("show");
+              });
+            });
+
+            function hideOverlay() {
+              overlay.classList.remove("show");
+            }
+          </script>
+          <!-- Services section -->
+          <section class="pt-20">
+            <h1 class="text-6xl font-bold text-orange-500 my-8">My Services</h1>
+            <div class="grid md:grid-cols-3 gap-5 my-10 mb-16 px-">
+              <div
+                class="bg-purple-100 border-2 border-purple-900 p-5 rounded-xl hover:shadow-2xl duration-300 flex flex-col justify-center"
+              >
+                <img
+                  src="./img/services/e-com.png"
+                  alt="WordPress"
+                  class="w-16 h-16 rounded-4xl my-4 mx-auto outline-2 outline-offset-2"
+                />
+                <h1 class="text-2xl font-bold font-mono">
+                  E-commerce Development
+                </h1>
+                <h1 class="text-justify p-2">
+                  I develop robust, conversion-optimized online stores using
+                  WooCommerce or custom-built solutions. From product catalogs
+                  to secure checkout systems, each store is tailored for
+                  scalability, performance, and a seamless shopping experience.
+                </h1>
+              </div>
+              <div
+                class="bg-purple-100 border-2 border-purple-900 p-5 rounded-xl hover:shadow-2xl duration-300 flex flex-col justify-center"
+              >
+                <img
+                  src="./img/services/blogging.png"
+                  alt="WordPress"
+                  class="w-16 h-16 rounded-4xl my-4 mx-auto outline-2 outline-offset-2"
+                />
+                <h1 class="text-2xl font-bold font-mono">
+                  Blog Website Development
+                </h1>
+                <h1 class="text-justify p-2">
+                  Custom blogging platforms designed for content creators and
+                  businesses seeking visibility. Built with SEO best practices,
+                  clean layouts, and intuitive content management to ensure
+                  consistent engagement and growth.
+                </h1>
+              </div>
+              <div
+                class="bg-purple-100 border-2 border-purple-900 p-5 rounded-xl hover:shadow-2xl duration-300 flex flex-col justify-center"
+              >
+                <img
+                  src="./img/services/custom.png"
+                  alt="WordPress"
+                  class="w-16 h-16 rounded-4xl my-4 mx-auto outline-2 outline-offset-2"
+                />
+                <h1 class="text-2xl font-bold font-mono">
+                  Custom Website Development
+                </h1>
+                <h1 class="text-justify p-2">
+                  Fully customized web solutions built from the ground up. I
+                  leverage modern technologies to deliver responsive, secure,
+                  and high-performance websites aligned with your unique
+                  business logic and functionality requirements.
+                </h1>
+              </div>
+              <div
+                class="bg-purple-100 border-2 border-purple-900 p-5 rounded-xl hover:shadow-2xl duration-300 flex flex-col justify-center"
+              >
+                <img
+                  src="./img/services/personal.png"
+                  alt="WordPress"
+                  class="w-16 h-16 rounded-4xl my-4 mx-auto outline-2 outline-offset-2"
+                />
+                <h1 class="text-2xl font-bold font-mono">
+                  Personal Website Development
+                </h1>
+                <h1 class="text-justify p-2">
+                  Professionally crafted personal websites that elevate your
+                  online presence. Whether you're a freelancer, creative
+                  professional, or entrepreneur, I build compelling digital
+                  identities that reflect your personality and goals.
+                </h1>
+              </div>
+              <div
+                class="bg-purple-100 border-2 border-purple-900 p-5 rounded-xl hover:shadow-2xl duration-300 flex flex-col justify-center"
+              >
+                <img
+                  src="./img/services/redesign.png"
+                  alt="WordPress"
+                  class="w-16 h-16 rounded-4xl my-4 mx-auto outline-2 outline-offset-2"
+                />
+                <h1 class="text-2xl font-bold font-mono">
+                  Web Redesign and Development
+                </h1>
+                <h1 class="text-justify p-2">
+                  Redesigns that go beyond aesthetics — I modernize outdated
+                  websites to enhance usability, improve load times, and deliver
+                  a refined user experience, all while maintaining brand
+                  consistency and SEO performance.
+                </h1>
+              </div>
+              <div
+                class="bg-purple-100 border-2 border-purple-900 p-5 rounded-xl hover:shadow-2xl duration-300 flex flex-col justify-center"
+              >
+                <img
+                  src="./img/services/uiux.png"
+                  alt="WordPress"
+                  class="w-16 h-16 rounded-4xl my-4 mx-auto outline-2 outline-offset-2"
+                />
+                <h1 class="text-2xl font-bold font-mono">UI/UX Design</h1>
+                <h1 class="text-justify p-2">
+                  Strategic, user-centered interface design for web and mobile
+                  platforms. Using tools like Figma, I create intuitive,
+                  accessible, and visually engaging experiences that align with
+                  user needs and business goals.
+                </h1>
+              </div>
+            </div>
+          </section>
+          <!-- pricing  -->
+          <section class="pt-16">
+            <h1 class="text-6xl font-bold text-orange-500 my-8">Pricing</h1>
+            <div class="mx-auto mt-10 bg-white rounded-2xl overflow-hidden">
+              <div id="slideshow3" class="relative">
+                <!-- pricing slide 1 -->
+                <div class="slide p-6 block">
+                  <h2 class="text-3xl text-purple-800 font-semibold">
+                    E-commerce site development
+                  </h2>
+                  <div
+                    class="grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto my-6"
+                  >
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        Basics
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500">
+                          $300</span
+                        >
+                      </p>
+
+                      <p>- Up to 5 products</p>
+
+                      <p>- Basic WooCommerce setup</p>
+                      <p>- Standard theme</p>
+
+                      <p>- Payment gateway integration</p>
+
+                      <p>- Mobile responsive design</p>
+
+                      <p>- Contact form</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+                    <div
+                      class="p-4 scale-y-105 bg-purple-100 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        standerd
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500">
+                          $600</span
+                        >
+                      </p>
+                      <p>- Up to 20 products</p>
+                      <p>- Custom UI styling (basic branding)</p>
+                      <p>- Coupon & discount system</p>
+                      <p>- Shipping & tax setup</p>
+                      <p>- Order email templates</p>
+                      <p>- Home, shop, product, cart & checkout pages</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        prime
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        Start
+                        <span class="text-5xl font-bold text-orange-500">
+                          1000</span
+                        >
+                      </p>
+                      <p>- Unlimited products</p>
+                      <p>- Fully custom design</p>
+                      <p>- Advanced filtering & search</p>
+                      <p>- Wishlist, product quick view</p>
+                      <p>- Speed optimization</p>
+                      <p>- Blog integration & SEO setup</p>
+                      <p>- Analytics & sales report dashboard</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- pricin slide 2 -->
+
+                <div class="slide p-6 hidden">
+                  <h2 class="text-3xl text-purple-800 font-semibold">
+                    Blog site development
+                  </h2>
+                  <div
+                    class="grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto my-6"
+                  >
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        Basics
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        Start
+                        <span class="text-5xl font-bold text-orange-500">
+                          $150</span
+                        >
+                      </p>
+                      <p>- Up to 3 blog posts</p>
+                      <p>- Simple layout (Home, About, Blog)</p>
+                      <p>- Mobile friendly</p>
+                      <p>- Easy editor access (WordPress)</p>
+                      <p>- Social media links</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+                    <div
+                      class="p-4 scale-y-105 bg-purple-100 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        standerd
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        Start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$250</span
+                        >
+                      </p>
+                      <p>- Up to 10 posts</p>
+                      <p>- Categories & tags</p>
+                      <p>- Author bio & archives</p>
+                      <p>- Email newsletter integration</p>
+                      <p>- SEO plugin setup</p>
+                      <p>- Social sharing buttons</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        prime
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        Start
+                        <span class="text-5xl font-bold text-orange-500">
+                          $600</span
+                        >
+                      </p>
+                      <p>- Unlimited post-ready</p>
+
+                      <p>- Custom blog design</p>
+
+                      <p>- Featured articles carousel</p>
+
+                      <p>- Light/Dark mode</p>
+
+                      <p>- Comments system</p>
+
+                      <p>- Advanced SEO settings</p>
+
+                      <p>- Performance & speed optimization</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- pricing slide 3 -->
+                <div class="slide p-6 hidden">
+                  <h2 class="text-3xl text-purple-800 font-semibold">
+                    Personal site development
+                  </h2>
+                  <div
+                    class="grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto my-6"
+                  >
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        Basics
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$100</span
+                        >
+                      </p>
+                      <p>- One-page scroll layout</p>
+                      <p>- About, contact & socials</p>
+                      <p>- Clean, minimal design</p>
+                      <p>- Responsive on all devices</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+
+                    <div
+                      class="p-4 scale-y-105 bg-purple-100 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        standerd
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$250</span
+                        >
+                      </p>
+                      <p>- Multi-page site</p>
+                      <p>- Interactive animations</p>
+                      <p>- Portfolio gallery</p>
+                      <p>- Smooth scrolling & transitions</p>
+                      <p>- Contact form</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        prime
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$500</span
+                        >
+                      </p>
+                      <p>- Fully customized design</p>
+                      <p>- Project showcase with filters</p>
+                      <p>- Integrated blog or testimonials</p>
+                      <p>- Resume download</p>
+                      <p>- Light/Dark mode toggle</p>
+                      <p>- SEO & performance optimization</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- pricing slide 4 -->
+                <div class="slide p-6 hidden">
+                  <h2 class="text-3xl text-purple-800 font-semibold">
+                    Web Redevelopment / Redesigning
+                  </h2>
+                  <div
+                    class="grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto my-6"
+                  >
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        Basics
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$150</span
+                        >
+                      </p>
+                      <p>- Design refresh</p>
+                      <p>- Color & font updates</p>
+                      <p>- Improved layout structure</p>
+                      <p>- Mobile responsiveness check</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+
+                    <div
+                      class="p-4 scale-y-105 bg-purple-100 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        standerd
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$400</span
+                        >
+                      </p>
+                      <p>- Full visual redesign</p>
+                      <p>- UX restructuring</p>
+                      <p>- Conversion-focused elements</p>
+                      <p>- Navigation and layout improvements</p>
+                      <p>- Mobile & tablet optimization</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        prime
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$800</span
+                        >
+                      </p>
+                      <p>- Complete overhaul (design + development)</p>
+                      <p>- SEO retention</p>
+                      <p>- Speed optimization</p>
+                      <p>- Performance tracking setup</p>
+                      <p>- CMS migration (if needed)</p>
+                      <p>- Modern, engaging UI</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- pricing slide 5 -->
+                <div class="slide p-6 hidden">
+                  <h2 class="text-3xl text-purple-800 font-semibold">
+                    UI/UX design
+                  </h2>
+                  <div
+                    class="grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto my-6"
+                  >
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        Basics
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$100</span
+                        >
+                      </p>
+                      <p>- 1–2 screen UI (e.g., homepage)</p>
+                      <p>- Moodboard & style guide</p>
+                      <p>- Wireframe included</p>
+                      <p>- Figma deliverables</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+
+                    <div
+                      class="p-4 scale-y-105 bg-purple-100 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        standerd
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$250</span
+                        >
+                      </p>
+                      <p>- Up to 5 screen designs</p>
+                      <p>- High-fidelity UI</p>
+                      <p>- Design system components</p>
+                      <p>- Mobile & desktop views</p>
+                      <p>- Color, typography, and grid systems</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        prime
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$500</span
+                        >
+                      </p>
+                      <p>- 10+ screen designs</p>
+                      <p>- Interactive prototype (Figma)</p>
+                      <p>- Design system & reusable components</p>
+                      <p>- Developer handoff ready</p>
+                      <p>- User flow mapping</p>
+                      <p>- Responsive layout design</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- pricing slide  6 -->
+                <div class="slide p-6 hidden">
+                  <h2 class="text-3xl text-purple-800 font-semibold">
+                    custom site development
+                  </h2>
+                  <div
+                    class="grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto my-6"
+                  >
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        Basics
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$500</span
+                        >
+                      </p>
+                      <p>- Static website (up to 4 pages)</p>
+                      <p>- Responsive layout</p>
+                      <p>- Clean and fast-loading code</p>
+                      <p>- Custom design integration</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+
+                    <div
+                      class="p-4 scale-y-105 bg-purple-100 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        standerd
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$999</span
+                        >
+                      </p>
+                      <p>- Dynamic content (basic backend)</p>
+
+                      <p>- Admin panel (basic CRUD)</p>
+
+                      <p>- Authentication (login/signup)</p>
+
+                      <p>- Contact form with email integration</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+
+                    <div
+                      class="p-4 border-2 border-purple-600 rounded-xl hover:shadow-[_0px_0px_20px] duration-300 flex flex-col"
+                    >
+                      <h2 class="text-xl text-center font-bold text-purple-700">
+                        prime
+                      </h2>
+                      <p class="text-center my-10 text-xs">
+                        start
+                        <span class="text-5xl font-bold text-orange-500"
+                          >$1599</span
+                        >
+                      </p>
+                      <p>- Full-stack development (frontend + backend)</p>
+                      <p>- Custom business logic</p>
+                      <p>- REST API integration</p>
+                      <p>- User roles & permissions</p>
+                      <p>- Dashboard + analytics</p>
+                      <p>- Database design & deployment</p>
+                      <a
+                        href="#contact"
+                        class="mt-8 py-1.5 text-center hover:text-white font-medium bg-purple-300 border-2 rounded-xl border-purple-600 hover:-translate-y-1 duration-300 hover:bg-purple-600"
+                        >Contact</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between items-center p-4">
+                <button
+                  onclick="changeSlide('slideshow3', -1)"
+                  class="p-2 bg-purple-500 text-white rounded-full hover:bg-purple-600"
+                >
+                  <i data-lucide="chevron-left"></i>
+                </button>
+                <div id="indicator-slideshow3" class="flex gap-2">
+                  <span class="w-3 h-3 rounded-full bg-purple-500"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                </div>
+                <button
+                  onclick="changeSlide('slideshow3', 1)"
+                  class="p-2 bg-purple-500 text-white rounded-full hover:bg-purple-600"
+                >
+                  <i data-lucide="chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- claint testimonial  -->
+          <section
+            class="flex md:flex-row flex-col justify-center items-center gap-2 py-20"
+          >
+            <div class="bg-white p-6 md:w-1/4 rounded-xl">
+              <h1 class="text-6xl/16 font-bold text-orange-600">
+                What Client Think About Me
+              </h1>
+            </div>
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-5">
+              <!-- testimonial 1-->
+              <div class="bg-white p-6 rounded-xl drop-shadow-2xl">
+                <h1 class="text-xs font-bold text-purple-500 my-2">
+                  Rahul Mehta – Founder, Mehta Organics
+                </h1>
+                <p>
+                  "Soumyadeep transformed our outdated online store into a
+                  sleek, high-performing e-commerce platform. Sales increased
+                  within weeks of launch. He’s professional, detail-oriented,
+                  and truly understands what a business needs."
+                </p>
+              </div>
+              <!-- testimonial 2-->
+
+              <div class="bg-white p-6 rounded-xl drop-shadow-2xl">
+                <h1 class="text-xs font-bold text-purple-500 my-2">
+                  Anika Roy – Lifestyle Blogger
+                </h1>
+                "I wanted a personal blog that looked clean, modern, and easy to
+                manage — and Soumyadeep delivered exactly that. He also guided
+                me on how to update my content, which was a big help. Highly
+                recommended!"
+              </div>
+              <!-- testimonial 3-->
+
+              <div class="bg-white p-6 rounded-xl drop-shadow-2xl">
+                <h1 class="text-xs font-bold text-purple-500 my-2">
+                  David Kim – UX Manager, Nova Tech
+                </h1>
+                "We hired Soumyadeep for a complete UI/UX revamp of our SaaS
+                product website. He exceeded our expectations with a
+                user-focused design that significantly improved engagement.
+                Great communicator and a pleasure to work with. "
+              </div>
+            </div>
+          </section>
+
+          <!-- end of content section -->
+        </section>
+      </div>
+    </section>
+    <!-- js section  -->
+    <!-- slideshow js -->
+    <script>
+      const currentSlide = {
+        slideshow1: 0,
+        slideshow2: 0,
+        slideshow3: 0,
+      };
+
+      function changeSlide(id, direction) {
+        const slides = document.querySelectorAll(`#${id} .slide`);
+        const indicators = document.querySelectorAll(`#indicator-${id} span`);
+        const color =
+          id === "slideshow1"
+            ? "blue"
+            : id === "slideshow2"
+            ? "green"
+            : "purple";
+
+        slides[currentSlide[id]].classList.add("hidden");
+        indicators[currentSlide[id]].classList.remove(`bg-${color}-500`);
+        indicators[currentSlide[id]].classList.add("bg-gray-300");
+
+        currentSlide[id] =
+          (currentSlide[id] + direction + slides.length) % slides.length;
+
+        slides[currentSlide[id]].classList.remove("hidden");
+        indicators[currentSlide[id]].classList.remove("bg-gray-300");
+        indicators[currentSlide[id]].classList.add(`bg-${color}-500`);
+      }
+
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
